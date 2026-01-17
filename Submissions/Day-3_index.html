@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeroTheory - The Future Starts Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">⚡ ZeroTheory</div>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#community">Community</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+            <div class="theme-toggle" id="themeToggle">
+                <div class="toggle-circle"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="whats-new-badge">
+                <span class="badge-icon">✨</span>
+                <span class="badge-text">What's New: </span>
+            </div>
+            <h1>The Future Starts with Zero</h1>
+            <p>Join a revolutionary community reimagining what's possible. Break boundaries, think differently, and create the future with ZeroTheory.</p>
+            <div>
+                <button class="cta-button" onclick="scrollToSection('community')">Get Started</button>
+                <button class="cta-button secondary" onclick="showAlert()">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <h2 class="section-title scroll-reveal">Why Choose ZeroTheory?</h2>
+        <div class="features-grid">
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p>Experience unparalleled speed and performance. Built for the modern web with cutting-edge technology.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Design</h3>
+                <p>Stunning interfaces that captivate. Every pixel is crafted with precision and creativity in mind.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Reliable</h3>
+                <p>Your data is protected with military-grade encryption. Trust is everything, and we deliver.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Community</h3>
+                <p>Connect with innovators worldwide. Share ideas, collaborate, and grow together as one community.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">📈</div>
+                <h3>Scale Infinitely</h3>
+                <p>Start small, grow big. Our infrastructure scales seamlessly with your ambitions.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="feature-icon">🤝</div>
+                <h3>Expert Support</h3>
+                <p>Dedicated team ready 24/7. Get help when you need it from our passionate experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="community" id="community">
+        <h2>Join Our Growing Community</h2>
+        <p style="color: var(--text-gray); font-size: 1.1rem; margin-bottom: 2rem;">Be part of something bigger. Together, we're changing the world.</p>
+        <div class="community-grid">
+            <div class="community-stat">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Active Members</div>
+            </div>
+            <div class="community-stat">
+                <div class="stat-number" data-target="120">0</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="community-stat">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Projects Launched</div>
+            </div>
+            <div class="community-stat">
+                <div class="stat-number" data-target="99">0</div>
+                <div class="stat-label">Uptime %</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">What Our Community Says</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-card active">
+                <div class="testimonial-text">"ZeroTheory completely transformed how I approach innovation. The community is incredible, and the tools are phenomenal!"</div>
+                <div class="testimonial-author">Alex Chen</div>
+                <div class="testimonial-role">Tech Entrepreneur</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"I've never seen a platform that combines such elegant design with powerful functionality. This is the future of community platforms."</div>
+                <div class="testimonial-author">Sarah Johnson</div>
+                <div class="testimonial-role">Product Designer</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-text">"The support team is amazing, and the features keep getting better. ZeroTheory is a game-changer for our entire team."</div>
+                <div class="testimonial-author">Marcus Williams</div>
+                <div class="testimonial-role">Startup Founder</div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn" onclick="previousTestimonial()">❮</button>
+            <button class="carousel-btn" onclick="nextTestimonial()">❯</button>
+        </div>
+    </section>
+
+    <!-- ROBOTS & ROCKETS SHOWCASE SECTION -->
+    <section class="robots-section">
+        <h2 class="section-title scroll-reveal">Powered by Innovation</h2>
+        <div class="robots-grid">
+            <div class="robot-item scroll-reveal">
+                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="robot-svg">
+                    <g fill="%2300d4ff" opacity="0.9">
+                        <rect x="35" y="10" width="30" height="35" rx="5"/>
+                        <circle cx="42" cy="22" r="3" fill="%23ff006e"/>
+                        <circle cx="58" cy="22" r="3" fill="%23ff006e"/>
+                        <rect x="40" y="50" width="8" height="30" rx="2"/>
+                        <rect x="52" y="50" width="8" height="30" rx="2"/>
+                        <rect x="38" y="80" width="24" height="12" rx="4"/>
+                    </g>
+                </svg>
+                <h3>AI Assistant</h3>
+                <p>Smart automation at your fingertips</p>
+            </div>
+            <div class="rocket-item scroll-reveal">
+                <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" class="rocket-svg">
+                    <g fill="%23ff006e" opacity="0.9">
+                        <polygon points="50,10 80,50 70,80 30,80 20,50"/>
+                        <rect x="45" y="80" width="10" height="40" rx="2"/>
+                        <polygon points="40,120 50,150 60,120"/>
+                        <circle cx="50" cy="100" r="2" fill="%2300d4ff"/>
+                    </g>
+                </svg>
+                <h3>Rocket Launch</h3>
+                <p>Accelerate your growth instantly</p>
+            </div>
+            <div class="robot-item scroll-reveal">
+                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg" class="robot-svg">
+                    <g fill="%23ff006e" opacity="0.9">
+                        <rect x="30" y="15" width="40" height="40" rx="3"/>
+                        <rect x="35" y="20" width="30" height="20" rx="2" fill="%2300d4ff" opacity="0.7"/>
+                        <rect x="38" y="60" width="7" height="35" rx="2"/>
+                        <rect x="55" y="60" width="7" height="35" rx="2"/>
+                        <circle cx="42" cy="85" r="4" fill="%2300d4ff"/>
+                        <circle cx="58" cy="85" r="4" fill="%2300d4ff"/>
+                    </g>
+                </svg>
+                <h3>Smart Bot</h3>
+                <p>Intelligent solutions for you</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#blog">Blog</a>
+        </div>
+      <div class="social-links">
+    <a class="social-icon" href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+    <a class="social-icon" href="https://youtube.com" target="_blank" title="YouTube">▶️</a>
+    
+    <a class="social-icon" href="https://www.linkedin.com/company/zerotheory-zeroes-to-heroes/" target="_blank" title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+    </a>
+
+    <a class="social-icon" href="https://whatsapp.com" target="_blank" title="WhatsApp">💬</a>
+    <a class="social-icon" href="javascript:void(0)" title="Twitter">𝕏</a>
+    
+    <a class="social-icon" href="https://github.com/revanshsharma/zeroes-to-heroes" target="_blank" title="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+    </a>
+</div>
+        <p>&copy; 2026 ZeroTheory. All rights reserved. | Crafted with ❤️ for the future.</p>
+    </footer>
+
+    <script>
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('active');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('active');
+            
+            const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+            localStorage.setItem('theme', currentTheme);
+        });
+
+        // ===== SCROLL ANIMATIONS =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== COUNTER ANIMATION =====
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+
+        const runCounter = (counter) => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const increment = target / speed;
+
+            const updateCount = () => {
+                const count = parseInt(counter.innerText);
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+
+            updateCount();
+        };
+
+        // Start counter when section is visible
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    counters.forEach(counter => {
+                        if (counter.innerText === '0') {
+                            runCounter(counter);
+                        }
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        document.querySelector('.community').forEach(el => {
+            counterObserver.observe(el);
+        }) || counterObserver.observe(document.querySelector('.community'));
+
+        // ===== TESTIMONIALS CAROUSEL =====
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-card');
+
+        function showTestimonial(index) {
+            testimonials.forEach(card => card.classList.remove('active'));
+            testimonials[index].classList.add('active');
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        function previousTestimonial() {
+            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        // Auto-advance testimonials
+        setInterval(nextTestimonial, 5000);
+
+        // ===== HELPER FUNCTIONS =====
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function showAlert() {
+            alert('🚀 Welcome to ZeroTheory!\n\nMore details coming soon. Stay tuned!');
+        }
+
+        // ===== SMOOTH SCROLL FOR NAV LINKS =====
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    scrollToSection(href.substring(1));
+                }
+            });
+        });
+
+        // ===== PARALLAX EFFECT =====
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.hero::before, .hero::after');
+            // Smooth parallax for background elements
+        });
+    </script>
+</body>
+</html>
